@@ -1,0 +1,111 @@
+*Administrador de Realidad Aumentada
+
+
+
++Módulo de creación del mapa de la sucursal ---- MARCO
+x-Funcionalidad con mouse y teclado
+x-Agregar una opción para agregar muebles temporales (el nombre del mueble tendrá el sufijo temp)
+x-Agregar otro componente para estructuras no consideradas como muebles(columnas, pasillos fantasmas)
+x-Detallar más la información de los muebles
+x-Zoom in, out (scroll y pinch), movimiento libre de camara para ver mapa
+x-Validar que no exista mismo mueble con la misma cara
+x-Hacer/Deshacer cambios que hizo el usuario
+x-Agregar opción para cargar imagen de planograma
+x-Escalar y rotar imagen de planogrmaa
+
+x-Agregar cuadricula para tener referencia de escala
+
+
+
+
++Módulo de creación de nodos --- ALAN
+x-El usuario puede colocar nodos dentro de la tienda en cualquier posición
+x-Conectar nodos como el quiera
+x-Asignar pesos a los nodos de manera dinamica (por defecto si asigna un peso, el otro nodo conectado va a tener el mismo peso)
+x-Agregar opción para que usuario puede poner peso preferido en un nodo.
+x-Dibujar las conexiones de los nodos cuidando la optimización de los nodos
+x-Boton de preview de las conexion de nodos
+x-Al seleccionar un nodo se debe mostrar conexiones entre cada nodo, el nombre del nodo y a cuales está conectado
+x-Agregar una barra de información de como está conectado cada nodo con la información
+x-Cuando selecciones que se muestre el letrero con el nombre del nodos y los nodos con los que está conectado
+x-Agregar opción del offset de los nodos y su preview de visualización
+x-Validar el offset de los nodos
+x-Agregar visualización del offset de los nodos
+x-Guardar en formato json la información
+x-Selección multiple de nodos
+x-Opcion para duplicar nodos seleccionados pero sin información
+x-Hacer y deshacer funcionalidades
+
++Módulo de tags-rfids
+
+X-Colocar y quitar tags del mapa (posición en x, y z)
+X-Pantalla de información con el id de los tags
+X-Tamaño configurable de la zona de lectura de los tags
+X-Rotación de los tags (rotacion en el eje y)
+X-Asignación de id de los tags
+X-Selección multiple de tags
+X-Opcion para duplicar tags seleccionados pero sin información
+X-Hacer y deshacer funcionalidades
+
+
++Módulo de áreas/departamentos/secciones ---- MARCO
+X-Pantalla de información
+X--Nombre del departamento
+X--Coordenadas o posicion
+X--Id de la imagen para ser visualizado
+X--Ancho del area del departamento
+X--Altura del departamento
+
+X-Colocar caja dando click al area donde quiere que este 
+X-Expandir el area dandole click a las cajas
+X-Crear opciones por si es Departamento, Sección o Categoria
+X-Guardar en json el cambio realizado
+X-Hacer y deshacer cambios
+
+
++Módulos triggers
+X-Colocar caja dando click al area donde quiere que este 
+X-Expandir el area dandole click a las cajas
+X-Pantalla de información
+X-Opción al usuario si es trigger para colocar objeto o trigger para repath
+X-Rotación de triggers
+X-Guardar en json el cambio realizado
+X-Hacer y deshacer cambios
+
+
+
+
+
++Esqueleto del administrador
+X-Barra lateral izquierda con botones de modulos
+X-Barra de arriba para guardar el modo actual, guardar proyecto, cargar proyecto, cerrar
+X-Caja de información
+X-Botones de hacer y dehacer, botones de zoom
+
+
++Funcionalidades para abrir proyecto/Configuraciones
+
+X-Agregarle opcion de abrir proyecto (esto hace que se construya el mapa, carguen nodos, etc) y guardar proyecto en una carpeta que escoja el usuario.
+
+X-Archivo de configuración que tendrá el listado de cada json o paths de cada módulo, que será creado la primera vez que se cree proyecto.
+(Planograma, nodos, area de departamentos, tags, json de categorias)
+
+
+*Realidad Aumentada
+X-Crear los nodos en tiempo de ejecución a partir de json
+X-Crear los tags en tiempo de ejecución a partir de json
+X-Leer los json generados para departamentos areas 
+X-Crear los triggers en tiempo de ejecucuón a partir de json
+
+
+
+*Administrador de Productos
+-Nomenclatura de pasillos que se guarda en un archivo
+-Orientación de la tienda y caras
+-Descripcion breve 
+
+-Cargar sucursal 
+--Cargar nomenclatura
+--Cargar los productos asociados a cada pasillo/isla/cabecera
+
+-
